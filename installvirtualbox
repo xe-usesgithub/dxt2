@@ -1,21 +1,21 @@
 #!/bin/bash
 
-wget -q --no-check-certificate https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | apt-key add - 
-echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian bionic contrib" | tee /etc/apt/sources.list.d/virtualbox.list
+wget -q --no-check-certificate https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add - 
+echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian bionic contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
 
-apt update
-apt install -y virtualbox-6.0
+sudo apt update
+sudo apt install -y virtualbox-6.0
 
 wget --no-check-certificate https://download.virtualbox.org/virtualbox/6.0.18/Oracle_VM_VirtualBox_Extension_Pack-6.0.18.vbox-extpack
-yes | VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.0.18.vbox-extpack
+sudo yes | VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.0.18.vbox-extpack
 
-apt install -y gcc g++ linux-headers-amd64 make perl
+sudo apt install -y gcc g++ linux-headers-amd64 make perl
 read -p "Username to add to vboxusers group: " vboxuser
-adduser $vboxuser vboxusers
-/sbin/vboxconfig
+sudo adduser $vboxuser vboxusers
+sudo /sbin/vboxconfig
 
 read -p "Reboot to apply changes " setupcomplete
-sync
+sudo sync
 reboot
 
 #Uninstall
