@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo apt install -y xserver-xorg xserver-xorg-core x11-xserver-utils xfonts-base xinit
