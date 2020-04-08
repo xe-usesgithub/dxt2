@@ -5,18 +5,19 @@ echo "Setup user account"
 echo ""
 read -p "New username (no caps or spaces): " newuser
 useradd -m $newuser
+usermod -a -G lpadmin,netdev,plugdev,sudo $newuser
 passwd $newuser
+
 echo ""
 echo "Set root password: "
 passwd root
-adduser $newuser netdev
-adduser $newuser plugdev
-adduser $newuser sudo
 chsh -s /bin/bash $newuser
 chsh -s /bin/bash root
+
 printf "\n" | tee -a ~/.bashrc
 echo "export PATH=\"/usr/share/dxt2:\$PATH\"" >> ~/.bashrc
 printf "\n" | tee -a ~/.bashrc
+
 echo ""
 echo "Setup autologin"
 echo ""
