@@ -42,7 +42,7 @@ It's standard Debian and uses the standard Debian repos.
   <h4>Credits</h4>
   <ul>
   <li><b>Distribution:</b> <a href="https://www.debian.org/">Debian Buster</a></li>
-  <li><b>Desktop:</b> <a href="https://www.xfce.org/">XCFE4</a></li>
+  <li><b>Desktop:</b> <a href="https://www.xfce.org/">XFCE4</a></li>
   <li><b>Panel:</b> <a href="https://gitlab.com/o9000/tint2">Tint2</a></li>
   <li><b>Menu:</b> <a href="https://github.com/sgtpep/pmenu">Pmenu</a></li>
   <li><b>Theme:</b> <a href="https://www.gnome-look.org/p/1283611/">Aurora Nuevo Blue</a></li>
