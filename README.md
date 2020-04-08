@@ -47,7 +47,7 @@ It's standard Debian and uses the standard Debian repos.
   <li><b>Theme:</b> Aurora Nuevo Blue</li>
   <li><b>Icons:</b> Flat Remix Blue</li>
   <li><b>Window Manager:</b> Breeze Dark X</li>
-  <li><b>Installation:</b> bootcd</li>
+  <li><b>Installation:</b> <a href="https://packages.debian.org/buster/bootcd" target="_blank">bootcd</a> (ty Bernd)</li>
 <ul>
 
 </div>
