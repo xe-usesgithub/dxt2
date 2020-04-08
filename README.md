@@ -16,3 +16,16 @@
 </ul>
 
 It's standard Debian and uses the standard Debian repos.
+
+<h4>Post-Installation</h4>
+<p>Once in your newly installed desktop open a root terminal (Ctrl-Alt-R) and run any of the following that apply<p>
+  <ul>
+    <li><code>addswap</code><br/>creates & activates 2GB /swapfile</li>
+    <li><code>exportiso</code><br/>exports a live & installable iso of your current installation</li>
+    <li><code>installchrome</code><br/>installs Google Chrome</li>
+    <li><code>installsublime</code><br/>installs Sublime Text</li>
+    <li><code>installtrim</code><br/>activates weekly TRIM cronjob</li>
+    <li><code>installvirtualbox</code><br/>installs Google Chrome</li>
+    <li><code>update</code><br/>checks for updates, removes unused packages, cleans apt, upgrade</li>
+  </ul>
+  
