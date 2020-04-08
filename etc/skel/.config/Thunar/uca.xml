@@ -1,0 +1,41 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon>xfce-terminal</icon>
+	<name>Open Terminal</name>
+	<unique-id>1571641060073380-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>gksu-root-terminal</icon>
+	<name>Open Root Terminal</name>
+	<unique-id>1575296974875828-1</unique-id>
+	<command>sudo exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>text-editor</icon>
+	<name>Edit as Root</name>
+	<unique-id>1575534743924390-1</unique-id>
+	<command>sudo mousepad %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>viewimage</icon>
+	<name>Convert to JPG</name>
+	<unique-id>1581489587647010-1</unique-id>
+	<command>convert %f -quality 85 %f.jpg `basename %f .png`.jpg</command>
+	<description></description>
+	<patterns>*.png</patterns>
+	<image-files/>
+</action>
+</actions>

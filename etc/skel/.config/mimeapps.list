@@ -1,0 +1,28 @@
+[Added Associations]
+text/plain=mousepad.desktop;
+image/jpg=ristretto.desktop;
+image/jpeg=ristretto.desktop;
+image/png=ristretto.desktop;
+application/xml=mousepad.desktop;
+application/x-shellscript=mousepad.desktop;
+text/markdown=mousepad.desktop;
+text/x-install=mousepad.desktop;
+video/x-msvideo=mpv.desktop;
+application/zip=engrampa.desktop;
+application/x-desktop=mousepad.desktop;
+text/x-python=mousepad.desktop;
+application/pdf=mupdf.desktop;
+video/x-matroska=mpv.desktop;
+application/x-7z-compressed=engrampa.desktop;
+application/x-tint2-theme=mousepad.desktop;
+text/html=mousepad.desktop;chromium.desktop;
+
+[Default Applications]
+application/zip=engrampa.desktop
+application/pdf=mupdf.desktop
+video/mp4=mpv.desktop
+image/jpeg=ristretto.desktop
+image/png=ristretto.desktop
+video/x-msvideo=mpv.desktop
+video/x-matroska=mpv.desktop
+text/html=chromium.desktop
