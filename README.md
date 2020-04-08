@@ -8,7 +8,7 @@
 <ul>
   <li>Completely modernises XFCE</li>
   <li>Tweaked for a better desktop experience</li>
-  <li>Replaces your existing installation with very little input <small>I see this as a feature :P</small></li>
+  <li>Replaces your existing installation with very little input</li>
   <li>Built from netboot with only the required packages to run XFCE efficiently, nothing else</li>
   <li>Only 3 custom actions so as not to overcrowd YOUR menu (Open Root Terminal, Edit as Root, Convert to JPG)</li>
   <li>Shortened application names</li>
