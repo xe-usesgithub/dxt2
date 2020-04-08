@@ -31,6 +31,7 @@ It's standard Debian and uses the standard Debian repos.
     <li><code>installchrome</code> installs Google Chrome</li>
     <li><code>installsublime</code> installs Sublime Text</li>
     <li><code>installteamviewer</code> installs TeamViewer</li>
+    <li><code>installtmp</code> activate tmpfs</li>
     <li><code>installtrim</code> activates weekly TRIM cronjob</li>
     <li><code>installvirtualbox</code> installs Virtualbox 6.0</li>
     <li><code>update</code> checks for updates, removes unused packages, cleans apt, upgrades</li>
