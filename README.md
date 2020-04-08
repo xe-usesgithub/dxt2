@@ -1,4 +1,4 @@
-<h1 style="color:#336699">DXT2</h1>
+<h1 style="color:#336699!important;">DXT2</h1>
 
 <p>Lightweight OS based on Debian 10, XFCE, Tint2, Pmenu along with many improvements over the defaults.</p>
 
