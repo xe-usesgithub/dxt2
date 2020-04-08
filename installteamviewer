@@ -1,5 +1,0 @@
-#!/bin/bash
-wget --no-check-certificate -O - https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc | sudo apt-key add -
-sudo apt update
-sudo apt install -y teamviewer
-notify-send "TeamViewer installed"
