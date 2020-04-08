@@ -1,4 +1,4 @@
-<h1>DXT2</h1>
+<h1 style="color:#336699">DXT2</h1>
 
 <p>Lightweight OS based on Debian 10, XFCE, Tint2, Pmenu along with many improvements over the defaults.</p>
 
@@ -8,11 +8,12 @@
 <ul>
   <li>Completely modernises XFCE</li>
   <li>Tweaked for a better desktop experience</li>
-  <li>Replaces your existing installation with very little input</li>
+  <li>Replaces your existing installation with very little input <small>I see this as a feature :P</small></li>
   <li>Built from netboot with only the required packages to run XFCE efficiently, nothing else</li>
   <li>Only 3 custom actions so as not to overcrowd YOUR menu (Open Root Terminal, Edit as Root, Convert to JPG)</li>
   <li>Shortened application names</li>
   <li>Reduced menu clutter</li>
+  <li>Debian Buster</li>
 </ul>
 
 It's standard Debian and uses the standard Debian repos.
@@ -20,13 +21,13 @@ It's standard Debian and uses the standard Debian repos.
 <h4>Post-Installation</h4>
 <p>Once in your newly installed desktop open a root terminal (Ctrl-Alt-R) and run any of the following that apply<p>
   <ul>
-    <li><code>addswap</code><br/>creates & activates 2GB /swapfile</li>
-    <li><code>exportiso</code><br/>exports a live & installable iso of your current installation</li>
-    <li><code>installchrome</code><br/>installs Google Chrome</li>
-    <li><code>installsublime</code><br/>installs Sublime Text</li>
-    <li><code>installteamviewer</code><br/>installs TeamViewer</li>
-    <li><code>installtrim</code><br/>activates weekly TRIM cronjob</li>
-    <li><code>installvirtualbox</code><br/>installs Virtualbox 6.0</li>
-    <li><code>update</code><br/>checks for updates, removes unused packages, cleans apt, upgrades</li>
+    <li><code>addswap</code> creates & activates 2GB /swapfile</li>
+    <li><code>exportiso</code> exports a live & installable iso of your current installation</li>
+    <li><code>installchrome</code> installs Google Chrome</li>
+    <li><code>installsublime</code> installs Sublime Text</li>
+    <li><code>installteamviewer</code> installs TeamViewer</li>
+    <li><code>installtrim</code> activates weekly TRIM cronjob</li>
+    <li><code>installvirtualbox</code> installs Virtualbox 6.0</li>
+    <li><code>update</code> checks for updates, removes unused packages, cleans apt, upgrades</li>
   </ul>
   
