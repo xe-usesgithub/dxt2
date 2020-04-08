@@ -19,6 +19,8 @@
 
 It's standard Debian and uses the standard Debian repos.
 
+<hr>
+
 <h4>Post-Installation</h4>
 <p>Once in your newly installed desktop open a root terminal (Ctrl-Alt-R) and run any of the following that apply<p>
   <ul>
@@ -32,3 +34,15 @@ It's standard Debian and uses the standard Debian repos.
     <li><code>update</code> checks for updates, removes unused packages, cleans apt, upgrades</li>
   </ul>
   
+  <hr>
+  
+  <h4>Credits</h4>
+  <ul>
+  <li>Distribution: Debian Buster</li>
+  <li>Desktop: XCFE4</li>
+  <li>Panel: Tint2</li>
+  <li>Menu: Pmenu</li>
+  <li>Theme: Aurora Nuevo Blue</li>
+  <li>Icons: Flat Remix Blue</li>
+  <li>Window Manager: Breeze Dark X</li>
+<ul>
