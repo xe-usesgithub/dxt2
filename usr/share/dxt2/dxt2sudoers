@@ -1,0 +1,3 @@
+#!/bin/sh
+echo '%sudo   ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+exit

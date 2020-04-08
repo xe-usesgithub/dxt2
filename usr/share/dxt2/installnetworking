@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Installing networking..."
+echo ""
+sleep 1
+apt install -y samba
+printf "\n" | tee -a /etc/samba/smb.conf
+echo "client max protocol = NT1" | tee -a /etc/samba/smb.conf
+echo ""
+sleep 2
+notify-send "Networking installed"
+exit

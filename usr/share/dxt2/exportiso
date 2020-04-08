@@ -1,0 +1,7 @@
+#!/bin/bash
+swapoff /swapfile
+rm -r /var/spool/bootcd
+bootcdwrite -s
+sync
+swapon /swapfile
+exit

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo "Upgrading to Pro..."
+echo ""
+sleep 1
+sudo apt install -y build-essential deluge deepin-picker filezilla gimp lxtask partclone radiotray rsync
+cp /usr/share/dxt2/config.xml /home/*/.local/share/radiotray
+cp /usr/share/dxt2/gimp.desktop /usr/share/applications
+#/usr/share/dxt2/addswap
+/usr/share/dxt2/installnetworking
+/usr/share/dxt2/installoffice
+/usr/share/dxt2/installprinting
+/usr/share/dxt2/installsublime
+/usr/share/dxt2/installteamviewer
+/usr/share/dxt2/installtmp
+/usr/share/dxt2/installvirtualbox
+echo ""
+sleep 2
+notify-send "Upgrade complete"
+exit
