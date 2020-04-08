@@ -9,6 +9,7 @@
 <ul>
   <li>Completely modernises XFCE</li>
   <li>Tweaked for a better desktop experience</li>
+  <li>Replaces your existing installation with very little input</li>
   <li>Built from netboot with only the required packages to run XFCE efficiently, nothing else</li>
   <li>Only 3 custom actions so as not to overcrowd YOUR menu (Open Root Terminal, Edit as Root, Convert to JPG)</li>
   <li>Shortened application names</li>
@@ -24,8 +25,9 @@ It's standard Debian and uses the standard Debian repos.
     <li><code>exportiso</code><br/>exports a live & installable iso of your current installation</li>
     <li><code>installchrome</code><br/>installs Google Chrome</li>
     <li><code>installsublime</code><br/>installs Sublime Text</li>
+    <li><code>installteamviewer</code><br/>installs TeamViewer</li>
     <li><code>installtrim</code><br/>activates weekly TRIM cronjob</li>
-    <li><code>installvirtualbox</code><br/>installs Google Chrome</li>
-    <li><code>update</code><br/>checks for updates, removes unused packages, cleans apt, upgrade</li>
+    <li><code>installvirtualbox</code><br/>installs Virtualbox 6.0</li>
+    <li><code>update</code><br/>checks for updates, removes unused packages, cleans apt, upgrades</li>
   </ul>
   
