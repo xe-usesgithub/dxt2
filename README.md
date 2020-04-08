@@ -38,11 +38,12 @@ It's standard Debian and uses the standard Debian repos.
   
   <h4>Credits</h4>
   <ul>
-  <li>Distribution: Debian Buster</li>
-  <li>Desktop: XCFE4</li>
-  <li>Panel: Tint2</li>
-  <li>Menu: Pmenu</li>
-  <li>Theme: Aurora Nuevo Blue</li>
-  <li>Icons: Flat Remix Blue</li>
-  <li>Window Manager: Breeze Dark X</li>
+  <li><b>Distribution:</b> Debian Buster</li>
+  <li><b>Desktop:</b> XCFE4</li>
+  <li><b>Panel:</b> Tint2</li>
+  <li><b>Menu:</b> Pmenu</li>
+  <li><b>Theme:</b> Aurora Nuevo Blue</li>
+  <li><b>Icons:</b> Flat Remix Blue</li>
+  <li><b>Window Manager:</b> Breeze Dark X</li>
+  <li><b>Installation:</b> bootcd</li>
 <ul>
