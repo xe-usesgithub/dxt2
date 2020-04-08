@@ -1,4 +1,4 @@
-<div style="color:#222">
+<div style="color:#444">
 
 <h1 style="color:#336699!important;">DXT2</h1>
 
