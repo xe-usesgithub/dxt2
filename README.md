@@ -1,4 +1,4 @@
-DXT2
+<h1>DXT2</h1>
 
 
 Lightweight OS based on Debian 10, XFCE, Tint2, Pmenu
