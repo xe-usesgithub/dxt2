@@ -25,6 +25,9 @@ It's standard Debian and uses the standard Debian repos.
 
 <h4>Installation</h4>
 <p>Boot off dxt2sda1.iso, open a root terminal (Ctrl-Alt-R) and run <code>installdxt2</code></p>
+<alert><b>Warning:</b> Completely replaces your existing setup. Make sure you backup first!</alert>
+
+<hr>
 
 <h4>Post-Installation</h4>
 <p>Once in your newly installed desktop open a root terminal (Ctrl-Alt-R) and run any of the following that apply<p>
