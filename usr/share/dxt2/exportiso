@@ -2,6 +2,6 @@
 swapoff /swapfile
 rm -r /var/spool/bootcd
 bootcdwrite -s
-sync
+isohybrid /var/spool/bootcd/cdimage.iso
 swapon /swapfile
 exit
