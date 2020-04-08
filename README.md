@@ -4,3 +4,15 @@
 <p>Along with many improvements over the defaults</p>
 
 <p>I needed to replace Windows 7 and had just discovered Linux (6 years ago). I needed something light as I can't afford high-end hardware. Also easy to configure. So I began distro-hopping. I went through them all. Not just in VMs I installed to bare metal and used it for days to weeks to months. I ran into a million issues. I waded through tons of bad linux documentation and collected all the good bits along the way. I settled on XFCE. It was the "best" but it still wasn't nearly good enough. And the idea of DXT2 was born.</p>
+
+<h3>Features</h3>
+<ul>
+  <li>Completely modernises XFCE</li>
+  <li>Tweaked for a better desktop experience</li>
+  <li>Built from netboot with only the required packages to run XFCE efficiently, nothing else</li>
+  <li>Only 3 custom actions so as not to overcrowd YOUR menu (Open Root Terminal, Edit as Root, Convert to JPG)</li>
+  <li>Shortened application names</li>
+  <li>Reduced menu clutter</li>
+</ul>
+
+It's standard Debian and uses the standard Debian repos.
