@@ -40,14 +40,14 @@ It's standard Debian and uses the standard Debian repos.
   
   <h4>Credits</h4>
   <ul>
-  <li><b>Distribution:</b> <a href="https://www.debian.org/" target="_blank">Debian Buster</a></li>
-  <li><b>Desktop:</b> <a href="https://www.xfce.org/" target="_blank">XCFE4</a></li>
-  <li><b>Panel:</b> <a href="https://gitlab.com/o9000/tint2" target="_blank">Tint2</a></li>
-  <li><b>Menu:</b> <a href="https://github.com/sgtpep/pmenu" target="_blank">Pmenu</a></li>
-  <li><b>Theme:</b> <a href="https://www.gnome-look.org/p/1283611/" target="_blank">Aurora Nuevo Blue</a></li>
-  <li><b>Icons:</b> <a href="https://drasite.com/flat-remix" target="_blank">Flat Remix</a></li>
+  <li><b>Distribution:</b> <a href="https://www.debian.org/">Debian Buster</a></li>
+  <li><b>Desktop:</b> <a href="https://www.xfce.org/">XCFE4</a></li>
+  <li><b>Panel:</b> <a href="https://gitlab.com/o9000/tint2">Tint2</a></li>
+  <li><b>Menu:</b> <a href="https://github.com/sgtpep/pmenu">Pmenu</a></li>
+  <li><b>Theme:</b> <a href="https://www.gnome-look.org/p/1283611/">Aurora Nuevo Blue</a></li>
+  <li><b>Icons:</b> <a href="https://drasite.com/flat-remix">Flat Remix</a></li>
   <li><b>Window Manager:</b> Breeze Dark X</li>
-  <li><b>Installation:</b> <a href="https://packages.debian.org/buster/bootcd" target="_blank">bootcd</a> (ty Bernd)</li>
+  <li><b>Installation:</b> <a href="https://packages.debian.org/buster/bootcd">bootcd</a> (ty Bernd)</li>
 <ul>
 
 </div>
