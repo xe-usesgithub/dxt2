@@ -1,3 +1,5 @@
+<div style="color:#222">
+
 <h1 style="color:#336699!important;">DXT2</h1>
 
 <p>Lightweight OS based on Debian 10, XFCE, Tint2, Pmenu along with many improvements over the defaults.</p>
@@ -47,3 +49,5 @@ It's standard Debian and uses the standard Debian repos.
   <li><b>Window Manager:</b> Breeze Dark X</li>
   <li><b>Installation:</b> bootcd</li>
 <ul>
+
+</div>
