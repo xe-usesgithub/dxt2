@@ -26,15 +26,15 @@ It's standard Debian and uses the standard Debian repos.
 <h4>Post-Installation</h4>
 <p>Once in your newly installed desktop open a root terminal (Ctrl-Alt-R) and run any of the following that apply<p>
   <ul>
-    <li><code>addswap</code> creates & activates 2GB /swapfile</li>
-    <li><code>exportiso</code> exports a live & installable iso of your current installation</li>
-    <li><code>installchrome</code> installs Google Chrome</li>
-    <li><code>installsublime</code> installs Sublime Text</li>
-    <li><code>installteamviewer</code> installs TeamViewer</li>
-    <li><code>installtmp</code> activate tmpfs</li>
-    <li><code>installtrim</code> activates weekly TRIM cronjob</li>
-    <li><code>installvirtualbox</code> installs Virtualbox 6.0</li>
-    <li><code>update</code> checks for updates, removes unused packages, cleans apt, upgrades</li>
+    <li><code>addswap</code> Creates & activates 2GB /swapfile</li>
+    <li><code>exportiso</code> Exports a live & installable iso of your current installation</li>
+    <li><code>installchrome</code> Installs Google Chrome</li>
+    <li><code>installsublime</code> Installs Sublime Text</li>
+    <li><code>installteamviewer</code> Installs TeamViewer</li>
+    <li><code>installtmp</code> Activate tmpfs</li>
+    <li><code>installtrim</code> Activates weekly TRIM cronjob</li>
+    <li><code>installvirtualbox</code> Installs Virtualbox 6.0</li>
+    <li><code>update</code> Checks for updates, removes unused packages, cleans apt, upgrades</li>
   </ul>
   
   <hr>
