@@ -16,9 +16,8 @@
   <li>Removed all languages except English (you can still add your own easily)</li>
   <li>Shortened application names</li>
   <li>Reduced menu clutter</li>
+  <li>Standard Debian</li>
 </ul>
-
-It's standard Debian and uses the standard Debian repos.
 
 <hr>
 
