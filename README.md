@@ -22,9 +22,7 @@
 <hr>
 
 <h4>Installation</h4>
-<p>Burn the iso to flash</p>
-<code>dd if=dxt2sda1.iso of=/dev/sdx bs=1M status=progress && sync</code>
-
+<p>Burn the iso to flash <code>dd if=dxt2sda1.iso of=/dev/sdx bs=1M status=progress && sync</code></p>
 <p>Boot the live system. Open a root terminal (Ctrl-Alt-R) and run <code>installdxt2</code></p>
 <alert><b>WARNING:</b> Completely & irreversibly replaces your existing setup. Make sure you backup first!</alert>
 
