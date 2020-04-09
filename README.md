@@ -1,6 +1,6 @@
 <div style="color:#444444!important;">
 
-<h1 style="color:#336699!important;">DXT2</h1>
+<h1 style="color:#336699!important;">DXT2</h1> <h6>https://dxt2.co.za</h6>
 
 <p>Lightweight OS based on Debian 10, XFCE4, Tint2, Pmenu along with many improvements over the defaults.</p>
 
