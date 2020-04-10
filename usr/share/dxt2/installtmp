@@ -1,4 +1,4 @@
 #!/bin/bash
 cp /usr/share/systemd/tmp.mount /etc/systemd/system/tmp.mount
 systemctl enable tmp.mount
-exit
+echo ""
