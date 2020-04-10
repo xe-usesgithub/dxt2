@@ -1,9 +1,7 @@
 #!/bin/bash
 echo "Installing networking..."
-echo ""
 apt install -y samba
 printf "\n" | tee -a /etc/samba/smb.conf
 echo "client max protocol = NT1" | tee -a /etc/samba/smb.conf
 printf "\n" | tee -a /etc/samba/smb.conf
-echo ""
 exit
