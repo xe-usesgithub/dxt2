@@ -5,11 +5,8 @@ dxt2date=$(date +"%Y%m%d")
 dxt2time=$(date +"%H%M")
 rm -r /var/spool/bootcd
 bootcdwrite -s
-
 isohybrid /var/spool/bootcd/cdimage.iso
 cp /var/spool/bootcd/cdimage.iso Desktop/exportiso-$dxt2date-$dxt2time.iso
 chown 1001:1001 Desktop/*.iso
-
-notify-send -t 0 "Export complete. Image copied to desktop"
 swapon -a
 exit
