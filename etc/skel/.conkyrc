@@ -48,6 +48,6 @@ template9=""
 
 conky.text = [[
 
-${alignr}${font Montserrat Light:size=11}${color0}CPU ${font Montserrat Semibold:size=11}${cpu}%${font Montserrat Light:size=11}   ${alignr}${font Montserrat Light:size=11}${color0}RAM ${font Montserrat Semibold:size=11}${execi 3 /usr/share/dxt2/accurrate-ram-usage | grep -Po '.*(?=.$)'}${font Montserrat Light:size=11}   ${alignr}${font Montserrat Light:size=11}${color0}HDD ${font Montserrat Semibold:size=11}${fs_used_perc}%${font Montserrat Light:size=11}\
+${alignr}${font Montserrat Light:size=11}${color0}RAM ${font Montserrat Semibold:size=11}${execi 3 /usr/share/dxt2/accurrate-ram-usage | grep -Po '.*(?=.$)'}${font Montserrat Light:size=11}   ${alignr}${font Montserrat Light:size=11}${color0}HDD ${font Montserrat Semibold:size=11}${fs_used_perc}%${font Montserrat Light:size=11}   ${alignr}${font Montserrat Light:size=11}${color0}MAIL ${font Montserrat Semibold:size=11}${execi 300 /usr/share/dxt2/imap.py}${font Montserrat Light:size=11}\
 
 ]]
