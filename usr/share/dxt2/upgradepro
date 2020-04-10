@@ -3,9 +3,11 @@
 echo "Upgrading to Pro..."
 echo ""
 sleep 1
-sudo apt install -y build-essential deluge deepin-picker filezilla gimp lxtask partclone radiotray rsync
+sudo apt install -y build-essential deluge deepin-picker filezilla font-manager gimp lxtask partclone radiotray rsync
 cp /usr/share/dxt2/config.xml /home/*/.local/share/radiotray
 cp /usr/share/dxt2/gimp.desktop /usr/share/applications
+rm /usr/share/applications/org.gnome.FontManager.desktop
+rm /usr/share/applications/org.gnome.FontViewer.desktop
 #/usr/share/dxt2/addswap
 /usr/share/dxt2/installnetworking
 /usr/share/dxt2/installoffice
