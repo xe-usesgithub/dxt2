@@ -16,8 +16,8 @@
   <li>Removed all languages except English (you can still add your own easily)</li>
   <li>Shortened application names</li>
   <li>Reduced menu clutter</li>
-  <li>4K Alignment on HDD</li>
   <li>Standard Debian</li>
+  <li>4K Alignment</li>
 </ul>
 
 <hr>
