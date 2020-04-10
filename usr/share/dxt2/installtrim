@@ -1,4 +1,6 @@
 #!/bin/bash
 systemctl enable fstrim.timer
-notify-send "TRIM installed"
-exit
+systemctl disable rsyslog.service
+echo "block/sda/queue/scheduler = deadline" >> /etc/sysfs.conf
+echo "Reboot required"
+echo ""
