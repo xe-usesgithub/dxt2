@@ -1,10 +1,4 @@
 #!/bin/bash
-
 echo "Installing printer drivers..."
-echo ""
-sleep 1
 apt install -y cups cups-browsed fonts-droid-fallback foomatic-db-engine gsfonts hp-ppd libpaper-utils openprinting-ppds printer-driver-all printer-driver-gutenprint system-config-printer system-config-printer-udev
-echo ""
-sleep 2
-notify-send "Printing installed"
 exit
