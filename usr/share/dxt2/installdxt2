@@ -5,7 +5,7 @@ echo "Setup user account"
 echo ""
 read -p "New username (no caps or spaces): " newuser
 useradd -m $newuser
-usermod -a -G lpadmin,netdev,plugdev,sudo $newuser
+usermod -a -G netdev,plugdev,sudo $newuser
 passwd $newuser
 
 echo ""
@@ -36,7 +36,7 @@ echo ""
 parted -s /dev/sda mklabel msdos
 parted -s /dev/sda mkpart primary ext4 2048s 100%
 sleep 2
-bootcd2disk -s -z
+bootcd2disk -s -y
 echo ""
 
 clear
