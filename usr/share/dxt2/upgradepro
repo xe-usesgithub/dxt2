@@ -7,7 +7,6 @@ sudo apt install -y build-essential deluge deepin-picker filezilla font-manager 
 cp /usr/share/dxt2/config.xml /home/*/.local/share/radiotray
 cp /usr/share/dxt2/gimp.desktop /usr/share/applications
 rm /usr/share/applications/org.gnome.FontManager.desktop
-rm /usr/share/applications/org.gnome.FontViewer.desktop
 #/usr/share/dxt2/addswap
 /usr/share/dxt2/installnetworking
 /usr/share/dxt2/installoffice
