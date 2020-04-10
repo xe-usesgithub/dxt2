@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "Upgrading to Pro..."
+read -p "Upgrading to Pro... Reboots automatically." beginsetup
 echo ""
-sleep 1
+
 apt install -y build-essential deluge deepin-picker filezilla font-manager gimp lxtask partclone radiotray
 cp /usr/share/dxt2/config.xml /home/*/.local/share/radiotray
 cp /usr/share/dxt2/gimp.desktop /usr/share/applications
@@ -14,10 +14,8 @@ rm /usr/share/applications/org.gnome.FontManager.desktop
 /usr/share/dxt2/installteamviewer
 /usr/share/dxt2/installtmp
 /usr/share/dxt2/installvirtualbox
-
 cp /usr/share/dxt2/virtualbox.desktop /usr/share/applications
-
 echo ""
-sleep 1
-notify-send "Upgrade complete"
-exit
+
+sync
+reboot
