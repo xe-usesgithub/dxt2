@@ -2,4 +2,4 @@
 wget --no-check-certificate -O - https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc | apt-key add -
 apt update
 apt install -y teamviewer
-exit
+echo ""
