@@ -1,5 +1,4 @@
 #!/bin/bash
-
 swapoff -a
 dxt2date=$(date +"%Y%m%d")
 dxt2time=$(date +"%H%M")
