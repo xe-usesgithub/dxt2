@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Installing Chromium"
+apt install -y chromium chromium-sandbox
+cp /usr/share/dxt2/chromium.desktop /usr/share/applications
+echo ""
