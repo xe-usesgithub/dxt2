@@ -12,6 +12,7 @@
   <li>Tweaked for a better desktop experience</li>
   <li>Replaces your existing installation with very little input</li>
   <li>Built from netboot with only the required packages to run XFCE efficiently, nothing else</li>
+  <li>As such, it does not have all the bells and whistles - it's meant as a light base to build up from</li>
   <li>Useful custom actions (Open Root Terminal, Edit as Root, Convert to JPG)</li>
   <li>Removed all languages except English (you can still add your own easily)</li>
   <li>Shortened application names</li>
