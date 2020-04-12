@@ -35,7 +35,7 @@
     <li><code>addswap</code> Creates & activates 2GB /swapfile</li>
     <li><code>exportiso</code> Exports a live & installable iso of your current installation</li>
     <li><code>installtmp</code> Activates tmpfs</li>
-    <li><code>installtrim</code> Activates weekly TRIM cronjob</li>
+    <li><code>installtrim</code> Activates weekly TRIM cronjob & sets scheduler to deadline (only for SSD)</li>
     <li><code>update</code> Checks for updates, removes unused packages, cleans apt, upgrades</li>
     <br/>
     <li><code>installchrome</code> Installs Google Chrome</li>
