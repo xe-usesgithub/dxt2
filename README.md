@@ -17,7 +17,6 @@
   <li>Shortened application names</li>
   <li>Reduced menu clutter</li>
   <li>Standard Debian</li>
-  <li>4K Alignment</li>
 </ul>
 
 <hr>
