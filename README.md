@@ -32,17 +32,16 @@
 <h4>Post-Installation</h4>
 <p>Once in your newly installed desktop open a root terminal (Ctrl-Alt-R) and run any of the following that apply<p>
   <ul>
-    <li><code>addswap</code> Creates & activates 2GB /swapfile</li>
-    <li><code>exportiso</code> Exports a live & installable iso of your current installation</li>
-    <li><code>installtmp</code> Activates tmpfs</li>
-    <li><code>installtrim</code> Activates weekly TRIM cronjob & sets scheduler to deadline (only for SSD)</li>
-    <li><code>update</code> Checks for updates, removes unused packages, cleans apt, upgrades</li>
+    <li><code>addswap</code> Create & activate 2GB /swapfile</li>
+    <li><code>exportiso</code> Export a live & installable iso of your current installation</li>
+    <li><code>installtmp</code> Activate tmpfs</li>
+    <li><code>installtrim</code> Activate weekly TRIM cronjob & set scheduler to deadline (only for SSD)</li>
+    <li><code>update</code> Check for updates, remove unused packages, clean apt, upgrade</li>
     <br/>
-    <li><code>installchrome</code> Installs Google Chrome</li>
-    <li><code>installsublime</code> Installs Sublime Text</li>
-    <li><code>installteamviewer</code> Installs TeamViewer</li>    
-    <li><code>installvirtualbox</code> Installs & activates Virtualbox 6.0 with extension pack</li>
-    
+    <li><code>installchrome</code> Install Google Chrome</li>
+    <li><code>installsublime</code> Install Sublime Text</li>
+    <li><code>installteamviewer</code> Install TeamViewer</li>    
+    <li><code>installvirtualbox</code> Install & activate Virtualbox 6.0 with extension pack</li>
   </ul>
   
   <hr>
