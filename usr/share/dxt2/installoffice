@@ -1,1 +1,6 @@
-
+#!/bin/bash
+echo "Installing Office"
+apt install -y libreoffice-calc libreoffice-impress libreoffice-writer
+rm /usr/share/applications/libreoffice-startcenter.desktop
+echo ""
+ 
