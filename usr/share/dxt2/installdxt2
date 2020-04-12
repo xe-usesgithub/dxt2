@@ -33,10 +33,11 @@ echo ""
 clear
 echo "Installing LiveCD to disk"
 echo ""
-parted -s /dev/sda mklabel msdos
-parted -s /dev/sda mkpart primary ext4 2048s 100%
+wipefs --all --force /dev/sda
+echo ";" | sfdisk /dev/sda
+mkfs.ext4 -F /dev/sda1
 sleep 2
-bootcd2disk -s -y
+bootcd2disk -s -z
 echo ""
 
 clear
