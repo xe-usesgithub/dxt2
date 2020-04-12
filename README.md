@@ -17,6 +17,7 @@
   <li>Removed all languages except English (you can still add your own easily)</li>
   <li>Shortened application names</li>
   <li>Reduced menu clutter</li>
+  <li>Backports enabled</li>
   <li>Standard Debian</li>
 </ul>
 
