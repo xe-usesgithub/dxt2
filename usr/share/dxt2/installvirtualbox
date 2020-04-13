@@ -13,9 +13,5 @@ read -p "Username to add to vboxusers group: " vboxuser
 adduser $vboxuser vboxusers
 /sbin/vboxconfig
 
-read -p "Reboot to apply changes " setupcomplete
-sync
-reboot
-
 #Uninstall
 #VBoxManage extpack uninstall "Oracle VM VirtualBox Extension Pack"
