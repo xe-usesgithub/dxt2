@@ -3,7 +3,7 @@
 read -p "Upgrading to Pro... Reboots automatically." beginsetup
 echo ""
 
-apt install -y curl bc build-essential deluge deepin-picker filezilla font-manager gimp lxtask partclone radiotray rsync
+apt install -y curl bc build-essential deluge deepin-picker filezilla font-manager gimp lxtask radiotray
 cp /usr/share/dxt2/apps/config.xml /home/*/.local/share/radiotray
 cp /usr/share/dxt2/apps/gimp.desktop /usr/share/applications
 rm /usr/share/applications/org.gnome.FontManager.desktop
