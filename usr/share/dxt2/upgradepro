@@ -15,7 +15,6 @@ rm /usr/share/applications/org.gnome.FontManager.desktop
 /usr/share/dxt2/installteamviewer
 /usr/share/dxt2/installtmp
 /usr/share/dxt2/installvirtualbox
-cp /usr/share/dxt2/virtualbox.desktop /usr/share/applications
 echo ""
 
 sync
