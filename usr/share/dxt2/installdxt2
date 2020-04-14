@@ -33,6 +33,7 @@ echo ""
 clear
 echo "Installing LiveCD to disk"
 echo ""
+cp /usr/share/bootcd/bootcd2disk.conf.sda1 /usr/share/bootcd/bootcd2disk.conf
 wipefs --all --force /dev/sda
 echo ";" | sfdisk /dev/sda
 mkfs.ext4 -F /dev/sda1
