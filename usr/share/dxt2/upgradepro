@@ -1,13 +1,16 @@
 #!/bin/bash
 
-read -p "Upgrading to Pro... Reboots automatically." beginsetup
+echo "Upgrading to Pro... Reboots automatically."
 echo ""
+sleep 2
 
-apt install -y curl bc build-essential deluge deepin-picker filezilla font-manager gimp lxtask radiotray
+apt install -y bc build-essential deluge deepin-picker filezilla font-manager gimp lxtask radiotray
 cp /usr/share/dxt2/apps/config.xml /home/*/.local/share/radiotray
+cp /usr/share/dxt2/apps/deepin-picker.desktop /usr/share/applications
 cp /usr/share/dxt2/apps/gimp.desktop /usr/share/applications
 rm /usr/share/applications/org.gnome.FontManager.desktop
 
+/usr/share/dxt2/addswap
 /usr/share/dxt2/installnetworking
 /usr/share/dxt2/installoffice
 /usr/share/dxt2/installprinting
@@ -15,7 +18,6 @@ rm /usr/share/applications/org.gnome.FontManager.desktop
 /usr/share/dxt2/installteamviewer
 /usr/share/dxt2/installtmp
 /usr/share/dxt2/installvirtualbox
-echo ""
 
 sync
 reboot
