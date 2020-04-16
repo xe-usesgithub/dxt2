@@ -10,6 +10,7 @@ cp /usr/share/dxt2/apps/deepin-picker.desktop /usr/share/applications
 cp /usr/share/dxt2/apps/gimp.desktop /usr/share/applications
 rm /usr/share/applications/org.gnome.FontManager.desktop
 
+/usr/share/dxt2/installchromium
 /usr/share/dxt2/installnetworking
 /usr/share/dxt2/installoffice
 /usr/share/dxt2/installprinting
