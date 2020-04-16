@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "deb http://linux.teamviewer.com/deb stable main" >> /etc/apt/sources.list
+wget -O - https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc | apt-key add -
 apt update
 apt install -y teamviewer
 echo ""
