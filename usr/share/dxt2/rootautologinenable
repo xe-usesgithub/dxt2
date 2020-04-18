@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -i 's/ExecStart=-/sbin/agetty --noclear %I $TERM/required pam_succeed_if.so user != root quiet_success/g' /lib/systemd/system/getty@.service
