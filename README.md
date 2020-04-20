@@ -4,7 +4,7 @@
 
 <img src="https://dxt2.co.za/screenshot.jpg">
 
-<br/><br/>
+<br/>
 
 <p>Lightweight OS based on Debian 10, XFCE4, Tint2, Pmenu along with many improvements over the defaults.</p>
 
