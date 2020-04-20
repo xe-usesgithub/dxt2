@@ -28,7 +28,7 @@
 <hr>
 
 <h4>Installation</h4>
-<p>Burn the iso to flash <code>dd if=dxt2rc1.iso of=/dev/sdx bs=1M status=progress && sync</code></p>
+<p>Burn the iso to flash <code>dd if=dxt2rc1.iso of=/dev/sdx status=progress && sync</code></p>
 <p>Boot the live system. Do not mount any drives. Open a root terminal (Ctrl-Alt-R) and run <code>installdxt2</code>. You'll need to enter your new username and password, and reset the root password. The rest is automatic.</p>
 <alert><b>WARNING:</b> Completely & irreversibly replaces your existing setup. Make sure you backup first!</alert>
 
