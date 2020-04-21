@@ -62,7 +62,7 @@
   <li><b>Menu:</b> <a href="https://github.com/sgtpep/pmenu">Pmenu</a></li>
   <li><b>Theme:</b> <a href="https://www.gnome-look.org/p/1283611/">Aurora Nuevo Blue</a></li>
   <li><b>Icons:</b> <a href="https://drasite.com/flat-remix">Flat Remix</a></li>
-  <li><b>Window Manager:</b> Breeze Dark X</li>
+  <li><b>WW:</b> Breeze Dark X</li>
   <li><b>Installation:</b> <a href="https://packages.debian.org/buster/bootcd">bootcd</a> (ty Bernd)</li>
 <ul>
 
