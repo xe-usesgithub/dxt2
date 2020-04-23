@@ -1,7 +1,5 @@
 <div style="color:#444444!important;">
 
-<h1 style="color:#336699!important;">DXT2</h1> <h6>https://dxt2.co.za</h6>
-
 <img src="https://dxt2.co.za/screenshot.jpg">
 
 <br/>
