@@ -1,0 +1,3 @@
+<SystemDefaults
+DefaultSaveFormat=".doc"
+/>
