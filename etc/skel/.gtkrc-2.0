@@ -19,7 +19,7 @@ XfdesktopIconView::cell-text-width-proportion = 1.6
 widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
 
 gtk-theme-name="Aurora-Nuevo-Blue"
-gtk-icon-theme-name="Flat-Remix-Blue"
+gtk-icon-theme-name="Tela"
 gtk-font-name="Source Sans Pro 9"
 gtk-enable-tooltips=0
 
