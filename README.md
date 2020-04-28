@@ -46,7 +46,6 @@
     <li><code>installoffice</code> Install LibreOffice 6.1</li>
     <li><code>installsublime</code> Install Sublime Text</li>
     <li><code>installteamviewer</code> Install TeamViewer</li>    
-    <li><code>installvirtualbox</code> Install & activate Virtualbox 6.0 with extension pack</li>
   </ul>
   
   <hr>
