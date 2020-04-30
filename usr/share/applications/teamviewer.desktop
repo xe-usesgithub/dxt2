@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=TeamViewer
+Comment=Remote control and meeting solution.
+Exec=/opt/teamviewer/tv_bin/script/teamviewer
+Icon=TeamViewer
+Path=
+Terminal=false
+StartupNotify=true
+Categories=Support
