@@ -49,4 +49,3 @@ if [ "$file" = "" ]; then
 else
     $cmd "$file" $2 || true
 fi
-
