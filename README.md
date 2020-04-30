@@ -23,12 +23,9 @@
 
 <hr>
 
-<h4>Installation</h4>
-<p>For a standard install use the following:</p>
-<p>https://github.com/dessington/dxt2/releases/tag/1.0</p>
-
-<p>For automated install that wipes, formats & installs to first hard drive found (sda) use:</p>
-<p><a href="https://github.com/dessington/dxt2/releases/download/v1.0/dxt2autoinstall.iso">dxt2autoinstall</a>
+Installation
+- For a standard install use <a href="https://github.com/dessington/dxt2/releases/download/1.0/dxt2install.iso">dxt2install
+- For automated install that wipes, formats & installs to first hard drive found (sda) use <a href="https://github.com/dessington/dxt2/releases/download/v1.0/dxt2autoinstall.iso">dxt2autoinstall</a>
 
 <hr>
 
