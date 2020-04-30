@@ -24,9 +24,11 @@
 <hr>
 
 <h4>Installation</h4>
-<p>Burn the iso to flash <code>dd if=dxt2rc1.iso of=/dev/sdx status=progress && sync</code></p>
-<p>Boot the live system. Do not mount any drives. Open a root terminal (Ctrl-Alt-R) and run <code>installdxt2</code>. You'll need to enter your new username and password, and reset the root password. The rest is automatic.</p>
-<alert><b>!!! WARNING !!!</b> Completely & irreversibly replaces your existing setup. Make sure you backup first! If you'd rather not nuke your drive then use the standard installer version: https://github.com/dessington/dxt2/releases/tag/1.0</alert>
+<p>For a standard install use the following:</p>
+<p>https://github.com/dessington/dxt2/releases/tag/1.0</p>
+
+<p>For automated install that wipes, formats & installs to first hard drive found (sda) use:</p>
+<p><a href="https://github.com/dessington/dxt2/releases/download/v1.0/dxt2autoinstall.iso">dxt2autoinstall</a>
 
 <hr>
 
