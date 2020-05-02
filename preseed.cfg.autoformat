@@ -1,0 +1,93 @@
+d-i hw-detect/load_firmware boolean true
+d-i debian-installer/splash boolean false
+d-i debconf/priority select critical
+d-i auto-install/enabled boolean true
+
+d-i debian-installer/locale string en_ZA
+d-i debian-installer/language string en
+d-i debian-installer/country string ZA
+d-i debian-installer/locale string en_ZA.UTF-8
+d-i keyboard-configuration/xkb-keymap select us
+
+d-i clock-setup/utc boolean false
+d-i clock-setup/ntp boolean false
+d-i time/zone string Africa/Johannesburg
+
+d-i netcfg/choose_interface select auto
+d-i netcfg/link_wait_timeout string 5
+d-i netcfg/dhcp_timeout string 60
+
+d-i netcfg/get_hostname string unassigned-hostname
+d-i netcfg/get_domain string localdomain
+d-i netcfg/hostname string DXT2
+
+d-i netcfg/wireless_wep string
+d-i hw-detect/load_firmware boolean true
+
+d-i mirror/country string manual
+d-i mirror/http/hostname string http.us.debian.org
+d-i mirror/http/directory string /debian
+d-i mirror/http/proxy string
+
+d-i passwd/root-login boolean false
+d-i passwd/make-user boolean true
+d-i passwd/shadow boolean true
+d-i passwd/user-fullname string User
+d-i passwd/username string user
+d-i passwd/user-password password live
+d-i passwd/user-password-again password live
+d-i passwd/user-default-groups string audio cdrom netdev plugdev sudo video
+
+d-i partman-auto/disk string /dev/sda
+d-i partman-auto/method string regular
+d-i partman-md/device_remove_md boolean true
+d-i partman-auto/choose_recipe select myroot
+d-i partman-auto/expert_recipe string myroot :: 10000 50 -1 ext4 \
+     $primary{ } $bootable{ } method{ format } \
+     format{ } use_filesystem{ } filesystem{ ext4 } \
+     mountpoint{ / } \
+     options/noatime{ noatime } \
+    .
+d-i partman-basicfilesystems/no_swap boolean false
+d-i partman-md/confirm boolean true
+d-i partman-partitioning/confirm_write_new_label boolean true
+d-i partman/choose_partition select finish
+d-i partman/confirm boolean true
+d-i partman/confirm_nooverwrite boolean true
+d-i partman/mount_style select traditional
+
+d-i base-installer/install-recommends boolean false
+d-i apt-setup/non-free boolean true
+d-i apt-setup/contrib boolean true
+d-i apt-setup/local0/source boolean false
+d-i apt-setup/security-updates boolean true
+d-i debian-installer/allow_unauthenticated boolean true
+d-i apt-setup/multiarch string i386
+d-i apt-setup/cdrom/set-first boolean false
+d-i apt-setup/cdrom/set-next boolean false
+d-i apt-setup/cdrom/set-failed boolean false
+d-i apt-setup/disable-cdrom-entries boolean true
+popularity-contest popularity-contest/participate boolean false
+
+tasksel tasksel/first	multiselect none
+d-i pkgsel/update-policy select none
+
+d-i pkgsel/include string alsa-utils apt-transport-https aptitude bootcd breeze-cursor-theme ca-certificates conky curl dirmngr dosfstools eject engrampa genisoimage gir1.2-appindicator3-0.1 git gnome-system-tools gnome-themes-standard gnupg gparted gsimplecal gtk2-engines-pixbuf gvfs gvfs-backends haveged imagemagick irqbalance libarchive-tools libcurl4 libfile-pushd-perl libgconf-2-4 libgl1-mesa-dri libgl1-mesa-glx libnotify-bin libqt5opengl5 libqt5printsupport5 libtinfo5 lightdm lightdm-gtk-greeter-settings localepurge modemmanager mousepad mpv mupdf net-tools network-manager-gnome ntfs-3g p7zip-full partclone policykit-1-gnome python-gtk2 python-notify python3-gpg ristretto rsync squashfs-tools sudo sysfsutils syslinux-utils thunar thunar-archive-plugin thunar-volman tint2 tumbler tumbler-plugins-extra ulatencyd unzip user-setup volti wget wipe wireless-tools x11-xserver-utils xdg-utils xdotool xfce4-notifyd xfce4-screenshooter xfce4-session xfce4-settings xfce4-terminal xfdesktop4 xfonts-base xfwm4 xinit xorriso xserver-xorg xserver-xorg-core zenity zip
+
+d-i grub-installer/only_debian boolean true
+d-i grub-installer/with_other_os boolean true
+#d-i grub-installer/bootdev  string /dev/sda
+d-i grub-installer/bootdev  string default
+#d-i debian-installer/add-kernel-opts string nousb
+
+localepurge localepurge/nopurge multiselect en
+localepurge localepurge/none_selected boolean true
+localepurge localepurge/use-dpkg-feature boolean true
+
+xserver-xorg xserver-xorg/autodetect_monitor boolean true
+
+d-i finish-install/reboot_in_progress note
+d-i cdrom-detect/eject boolean true
+#d-i debian-installer/exit/poweroff boolean true
+
+d-i preseed/late_command string in-target wget --no-check-certificate https://dxt2.co.za/download/installdxt2; in-target chmod +x ./installdxt2; in-target ./installdxt2;
