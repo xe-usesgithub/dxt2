@@ -1,0 +1,21 @@
+#!/bin/bash
+
+apt install -y gcc g++ make perl linux-headers-amd
+
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | apt-key add -
+echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian bionic contrib" | tee /etc/apt/sources.list.d/virtualbox.list
+
+update
+apt install -y virtualbox-6.1
+
+wget https://download.virtualbox.org/virtualbox/6.1.6/Oracle_VM_VirtualBox_Extension_Pack-6.1.6.vbox-extpack
+yes | VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.6.vbox-extpack
+cp /usr/share/dxt2/apps/virtualbox.desktop /usr/share/applications
+rm Oracle_VM_VirtualBox_Extension_Pack-6.1.6.vbox-extpack
+
+read -p "Username to add to vboxusers: " vboxuser
+adduser $vboxuser vboxusers
+/sbin/vboxconfig
+
+echo "Reboot recommended."
+echo ""
