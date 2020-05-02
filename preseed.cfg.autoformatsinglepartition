@@ -90,8 +90,8 @@ in-target echo "127.0.0.1    localhost" > /etc/hosts; \
 in-target echo "127.0.1.1    DXT2" >> /etc/hosts; \
 in-target echo "Live system loading..." > /usr/share/bootcd/default.txt; \
 in-target echo "/dev/sda1 / ext4 noatime,errors-remount-ro 0 1" > /etc/fstab; \
-in-target echo "echo PATH=\"/usr/share/dxt2:\$PATH\"" >> /root/.bashrc; \
-in-target echo "echo PATH=\"/usr/share/dxt2:\$PATH\"" >> /etc/skel/.bashrc; \
+in-target echo "export PATH=\"/usr/share/dxt2:\$PATH\"" >> /root/.bashrc; \
+in-target echo "export PATH=\"/usr/share/dxt2:\$PATH\"" >> /etc/skel/.bashrc; \
 in-target echo "%sudo    ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers; \
 in-target find /usr/share/locale -mindepth 1 -maxdepth 1 ! -name 'en*' -exec rm -r {} \;; \
 in-target rm -r /usr/share/doc/*; \
@@ -99,7 +99,7 @@ in-target rm -r /usr/share/help/*; \
 in-target rm -r /usr/share/man/*; \
 in-target rm -r /usr/share/icons/Adwaita; \
 in-target rm -r /usr/share/themes/Adwaita; \
-in-target rm -r /usr/share/themes/Adwaita-Dark; \
+in-target rm -r /usr/share/themes/Adwaita-dark; \
 in-target rm -r /usr/share/themes/Bright; \
 in-target rm -r /usr/share/themes/Daloa; \
 in-target rm -r /usr/share/themes/Emacs; \
