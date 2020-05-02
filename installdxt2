@@ -63,10 +63,10 @@ echo "127.0.1.1	DXT2" >> /etc/hosts
 echo "%sudo    ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 find /usr/share/locale -mindepth 1 -maxdepth 1 ! -name 'en*' -exec rm -r {} \;
-find /usr/share/doc -depth -type f ! -name copyright -delete
 rm -r /usr/share/doc/*
 rm -r /usr/share/help/*
 rm -r /usr/share/man/*
+
 chsh -s /bin/bash root
 chsh -s /bin/bash user
 
