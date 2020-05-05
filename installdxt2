@@ -68,7 +68,7 @@ rm -r /usr/share/help/*
 rm -r /usr/share/man/*
 
 chsh -s /bin/bash root
-chsh -s /bin/bash user
+chsh -s /bin/bash $_user
 
 timedatectl set-local-rtc 1
 systemctl disable rsyslog.service
