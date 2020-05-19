@@ -40,8 +40,6 @@ For automated install that wipes, formats & installs to first hard drive found (
     <li><code>update</code> Check for updates, remove unused packages, clean apt, upgrade</li>
     <br/>
     <li><code>installchrome</code> Install Google Chrome</li>
-    <li><code>installchromium</code> Install Chromium</li>
-    <li><code>installfirefox</code> Install Firefox-ESR</li>
     <li><code>installoffice</code> Install LibreOffice 6.1</li>
     <li><code>installsublime</code> Install Sublime Text</li>
     <li><code>installteamviewer</code> Install TeamViewer</li>    
