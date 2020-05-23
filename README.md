@@ -24,7 +24,7 @@
 <hr>
 
 <h3>Installation</h3>
-For standard install use <b>dxt2install</b>. For automated install that wipes, formats & installs to first hard drive found (sda) use dxt2autoinstall. https://github.com/dessington/dxt2/releases
+For standard install use <b>dxt2install</b>. For automated install that wipes, formats & installs to first hard drive found (sda) use <b>dxt2autoinstall</b>. https://github.com/dessington/dxt2/releases
 
 <hr>
 
