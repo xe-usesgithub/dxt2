@@ -38,7 +38,6 @@ For standard install use <b>dxt2install</b>. For automated install that wipes, f
     <li><code>update</code> Check for updates, remove unused packages, clean apt, upgrade</li>
     <br/>
     <li><code>installchrome</code> Install Google Chrome</li>
-    <li><code>installoffice</code> Install LibreOffice 6.1</li>
     <li><code>installsublime</code> Install Sublime Text</li>
     <li><code>installteamviewer</code> Install TeamViewer</li>    
     <li><code>installvirtualbox</code> Install Virtualbox</li> 
