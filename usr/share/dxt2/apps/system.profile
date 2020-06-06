@@ -1,3 +1,0 @@
-<SystemDefaults
-DefaultSaveFormat=".doc"
-/>

@@ -1,6 +1,0 @@
-#!/bin/bash
-systemctl enable fstrim.timer
-systemctl disable rsyslog.service
-echo "block/sda/queue/scheduler = deadline" >> /etc/sysfs.conf
-echo "Reboot required"
-echo ""
