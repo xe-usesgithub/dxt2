@@ -1,0 +1,7 @@
+#!/bin/bash
+swapoff -a
+rm -r /var/spool/bootcd
+bootcdwrite -s
+isohybrid /var/spool/bootcd/cdimage.iso
+swapon -a
+echo ""

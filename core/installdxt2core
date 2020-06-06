@@ -1,0 +1,72 @@
+#!/bin/bash
+
+_user="$(id 1000 -u -n)"
+
+apt install --no-install-recommends -y alsa-utils apt-transport-https aptitude bc bootcd breeze-cursor-theme ca-certificates conky curl dirmngr dosfstools eject exfat-fuse exfat-utils genisoimage gir1.2-appindicator3-0.1 gnome-themes-standard gnupg gsimplecal gtk2-engines-murrine gtk2-engines-pixbuf gvfs gvfs-backends haveged imagemagick irqbalance libarchive-tools libbdplus0 libcurl4 libfile-pushd-perl libgconf-2-4 libgl1-mesa-dri libgl1-mesa-glx libglu1-mesa libnotify-bin libqt5opengl5 libqt5printsupport5 libsdl1.2debian libtinfo5 lightdm lightdm-gtk-greeter-settings localepurge modemmanager net-tools network-manager-gnome ntfs-3g p7zip-full perl policykit-1-gnome python-gtk2 python-notify python3-gpg rsync software-properties-common squashfs-tools sysfsutils syslinux-utils thunar thunar-archive-plugin tint2 tumbler tumbler-plugins-extra udevil ulatencyd unzip user-setup volti wget wipe wireless-tools wmctrl x11-xserver-utils xdg-utils xdotool xfce4-notifyd xfce4-screenshooter xfce4-session xfce4-settings xfce4-terminal xfdesktop4 xfonts-base xfwm4 xinit xorriso xserver-xorg xserver-xorg-core zenity zip
+
+rm /usr/share/applications/exo-mail-reader.desktop
+rm /usr/share/applications/exo-terminal-emulator.desktop
+rm /usr/share/applications/exo-web-browser.desktop
+rm /usr/share/applications/Thunar-bulk-rename.desktop
+rm /usr/share/applications/vim.desktop
+rm /usr/share/applications/tint2.desktop
+rm /usr/share/applications/volti.desktop
+rm /usr/share/applications/Thunar.desktop
+rm /usr/share/applications/xfce4-session-logout.desktop
+rm /usr/share/applications/display-im6.q16.desktop
+rm /usr/share/applications/xfce4-screenshooter.desktop
+
+rm -r /usr/share/icons/Adwaita
+rm -r /usr/share/themes/Adwaita
+rm -r /usr/share/themes/Adwaita-dark
+rm -r /usr/share/themes/Bright
+rm -r /usr/share/themes/Daloa
+rm -r /usr/share/themes/Emacs
+rm -r /usr/share/themes/Kokodi
+rm -r /usr/share/themes/Moheli
+rm -r /usr/share/themes/Raleigh
+rm -r /usr/share/themes/Retro
+rm -r /usr/share/themes/Smoke
+rm -r /usr/share/themes/ZOMG-PONIES!
+
+cd /tmp
+
+wget --no-check-certificate https://dxt2.co.za/download/dxt2.core.7z
+7z e dxt2.core.7z
+7z x -aoa aptconf.7z -o/etc/apt
+7z x -aoa lightdm.7z -o/etc/lightdm
+7z x -aoa share.7z -o/usr/share
+7z x -aoa skel.7z -o/etc/skel
+7z x -aoa skel.7z -o/home/$_user
+7z x -aoa skel.7z -o/root
+
+#chmod +x -R /usr/share/dxt2/
+#chmod +x -R /usr/share/applications/
+
+chown root:root -R /etc/skel
+chown $_user:$_user -R /home/$_user
+chown root:root -R /root
+
+sed -i "s/#autologin-user=/autologin-user=$_user/g" /etc/lightdm/lightdm.conf 
+
+cd /usr/share/dxt2
+cat sysctl >> /etc/sysctl.conf
+
+echo "export PATH=\"/usr/share/dxt2:\$PATH\"" >> /root/.bashrc
+echo "%sudo    ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+find /usr/share/locale -mindepth 1 -maxdepth 1 ! -name 'en*' -exec rm -r {} \;
+rm -r /usr/share/doc/*
+rm -r /usr/share/help/*
+rm -r /usr/share/i18n/*
+rm -r /usr/share/man/*
+
+chsh -s /bin/bash root
+chsh -s /bin/bash $_user
+
+touch /etc/initramfs-tools/conf.d/compress
+echo "COMPRESS=xz" > /etc/initramfs-tools/conf.d/compress
+
+/usr/share/dxt2/dxt2grub
+
+sync
