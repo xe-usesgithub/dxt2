@@ -40,9 +40,6 @@ wget --no-check-certificate https://dxt2.co.za/download/dxt2.core.7z
 7z x -aoa skel.7z -o/home/$_user
 7z x -aoa skel.7z -o/root
 
-#chmod +x -R /usr/share/dxt2/
-#chmod +x -R /usr/share/applications/
-
 chown root:root -R /etc/skel
 chown $_user:$_user -R /home/$_user
 chown root:root -R /root
