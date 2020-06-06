@@ -5,7 +5,7 @@
 <br/>
 <p>Lightweight OS based on Debian 10, XFCE4, Tint2, Pmenu along with many improvements over the defaults.</p>
 
-<p>I needed to replace Windows 7 and needed something light as I can't afford high-end hardware. Also easy to configure. So I began distro-hopping. I went through them all. Not just in VMs I installed to bare metal and used it for days to weeks to months. I ran into a million issues. I waded through tons of bad linux documentation and collected all the good bits along the way. I settled on XFCE. It was the "best" but could be better. And the idea of DXT2 was born. 3 years in the making. I hope others may find this useful too.</p>
+<p>I needed to replace Windows 7 and needed something light & easy to configure. So I began distro-hopping. I went through them all. Not just in VMs I installed to bare metal and used it for days to weeks to months. I ran into a million issues. I waded through tons of bad linux documentation and collected all the good bits along the way. I settled on XFCE. It was the "best" but could be better. And the idea of DXT2 was born. 3 years in the making. I hope others may find this useful too.</p>
 
 <h3>Features</h3>
 <ul>
@@ -38,6 +38,7 @@ https://github.com/dessington/dxt2/releases/tag/v1.4
     <li><code>update</code> Check for updates, remove unused packages, clean apt, upgrade</li>
     <br/>
     <li><code>installchrome</code> Install Google Chrome</li>
+    <li><code>installsignal</code> Install Signal Messenger</li>
     <li><code>installsublime</code> Install Sublime Text</li>
     <li><code>installteamviewer</code> Install TeamViewer</li>    
     <li><code>installvirtualbox</code> Install Virtualbox</li> 
@@ -58,6 +59,3 @@ https://github.com/dessington/dxt2/releases/tag/v1.4
 <ul>
 
 </div>
-
-If I could fork XFCE this is what it would be like.
-
