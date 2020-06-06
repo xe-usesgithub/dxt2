@@ -15,7 +15,6 @@
   <li>Built from netboot with only the required packages to run XFCE efficiently, nothing else</li>
   <li>As such, it does not have all the bells and whistles - it's meant as a light base to build up from</li>
   <li>Useful custom actions (Open Root Terminal, Edit as Root, Convert to JPG)</li>
-  <li>Shortened application names</li>
   <li>Reduced menu clutter</li>
   <li>Backports enabled</li>
   <li>Standard Debian</li>
