@@ -30,10 +30,10 @@ https://github.com/dessington/dxt2/releases/tag/v1.4
   <ul>
     <li><code>addswap</code> Create & activate 2GB /swapfile</li>
     <li><code>exportiso</code> Export a live & installable iso of your current installation</li>
-    <li><code>installtmp</code> Activate tmpfs</li>
     <li><code>installtrim</code> Activate weekly TRIM cronjob & set scheduler to deadline (only for SSD)</li>
     <li><code>update</code> Check for updates, remove unused packages, clean apt, upgrade</li>
     <br/>
+    <li><code>installbrave</code> Install Brave browser (soon)</li>
     <li><code>installchrome</code> Install Google Chrome</li>
     <li><code>installsignal</code> Install Signal Messenger</li>
     <li><code>installsublime</code> Install Sublime Text</li>
