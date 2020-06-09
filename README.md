@@ -55,11 +55,5 @@ https://github.com/dessington/dxt2/releases/tag/v1.4
   <li><b>Installation:</b> <a href="https://packages.debian.org/buster/bootcd">bootcd</a> (ty Bernd)</li>
 <ul>
   
-  <hr>
-  
-  <h4>Help Wanted</h4>
-  <p>- With customising bootcd2disk.conf for an EFI setup.</p>
-  <p>- With customising bootcd2disk.conf for dual booting both BIOS & EFI.</p>
-  <p>- With a working guide to FAI builder that doesn't omit important steps.</p>
 
 </div>
