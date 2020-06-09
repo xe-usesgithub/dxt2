@@ -52,7 +52,7 @@ https://github.com/dessington/dxt2/releases/tag/v1.4
   <li><b>Theme:</b> <a href="https://www.gnome-look.org/p/1283611/">Aurora Nuevo Blue</a></li>
   <li><b>Icons:</b> <a href="https://github.com/vinceliuice/Tela-icon-theme">Tela</a></li>
   <li><b>WM:</b> Breeze Dark X</li>
-  <li><b>Installation:</b> <a href="https://packages.debian.org/buster/bootcd">bootcd</a> (ty Bernd)</li>
+  <li><b>Installation:</b> <a href="https://packages.debian.org/buster/bootcd">bootcd</a></li>
 <ul>
   
 
