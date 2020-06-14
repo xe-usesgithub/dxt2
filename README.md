@@ -7,14 +7,12 @@
 
 <h3>Features</h3>
 <ul>
-  <li>Completely modernises XFCE</li>
   <li>Tweaked for a better desktop experience</li>
   <li>Blends with your desktop instead of trying to take it over</li>
-  <li>Built from netboot with only the required packages to run XFCE efficiently, nothing else</li>
   <li>Meant as a light base to build up from</li>
   <li>Useful custom actions (Open Root Terminal, Edit as Root, Convert to JPG)</li>
   <li>Backports enabled</li>
-  <li>Standard Debian</li>
+  <li>Debian Buster</li>
 </ul>
 
 <hr>
