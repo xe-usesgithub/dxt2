@@ -3,7 +3,7 @@
 <img src="https://github.com/dessington/dxt2/blob/master/dxt2xfce.png">
 <br/>
 <br/>
-<p>Lightweight OS based on Debian 10, XFCE4, Tint2, Pmenu along with many improvements over the defaults.</p>
+<p>Lightweight OS based on Debian 10, XFCE4, Tint2 & Pmenu.</p>
 
 <h3>Features</h3>
 <ul>
@@ -11,9 +11,8 @@
   <li>Tweaked for a better desktop experience</li>
   <li>Blends with your desktop instead of trying to take it over</li>
   <li>Built from netboot with only the required packages to run XFCE efficiently, nothing else</li>
-  <li>As such, it does not have all the bells and whistles - it's meant as a light base to build up from</li>
+  <li>Meant as a light base to build up from</li>
   <li>Useful custom actions (Open Root Terminal, Edit as Root, Convert to JPG)</li>
-  <li>Reduced menu clutter</li>
   <li>Backports enabled</li>
   <li>Standard Debian</li>
 </ul>
