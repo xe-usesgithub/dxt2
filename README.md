@@ -3,7 +3,7 @@
 <img src="https://github.com/dessington/dxt2/blob/master/dxt2coreplus1280.png">
 <br/>
 <br/>
-<p>Lightweight OS based on Debian 10, XFCE4, Tint2 & Pmenu.</p>
+<p>Lightweight OS based on Debian 10, XFCE4, Tint2 & Pmenu. <a href="https://dxt2.co.za/">dxt2.co.za</a></p>
 
 <h3>Features</h3>
 <ul>
@@ -18,7 +18,7 @@
 <hr>
 
 <h3>Installation</h3>
-https://github.com/dessington/dxt2/releases/tag/v1.4
+https://github.com/dessington/dxt2/releases
 
 <hr>
 
@@ -30,7 +30,7 @@ https://github.com/dessington/dxt2/releases/tag/v1.4
     <li><code>installtrim</code> Activate weekly TRIM cronjob & set scheduler to deadline (only for SSD)</li>
     <li><code>update</code> Check for updates, remove unused packages, clean apt, upgrade</li>
     <br/>
-    <li><code>installbrave</code> Install Brave browser (soon)</li>
+    <li><code>installbrave</code> Install Brave browser</li>
     <li><code>installchrome</code> Install Google Chrome</li>
     <li><code>installsignal</code> Install Signal Messenger</li>
     <li><code>installsublime</code> Install Sublime Text</li>
