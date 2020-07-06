@@ -1,6 +1,6 @@
 <div style="color:#444444!important;">
 
-<img src="https://github.com/dessington/dxt2/blob/master/dxt2coreplus1280.png">
+<img src="https://github.com/dessington/dxt2/blob/master/dxt2.0-screenshot.png">
 <br/>
 <br/>
 <p>Lightweight OS based on Debian 10, XFCE4, Tint2 & Pmenu. <a href="https://dxt2.co.za/">dxt2.co.za</a></p>
