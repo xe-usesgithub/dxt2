@@ -1,0 +1,56 @@
+#!/bin/bash
+
+clear
+echo "Setup user account"
+echo ""
+read -p "New username (no caps or spaces): " newuser
+useradd -m $newuser
+usermod -a -G netdev,plugdev,sudo $newuser
+passwd $newuser
+
+echo ""
+echo "Set root password: "
+passwd root
+chsh -s /bin/bash $newuser
+chsh -s /bin/bash root
+
+printf "\n" | tee -a ~/.bashrc
+echo "export PATH=\"/usr/share/dxt2:\$PATH\"" >> ~/.bashrc
+printf "\n" | tee -a ~/.bashrc
+
+echo ""
+echo "Setup autologin"
+echo ""
+sed -i 's/autologin-user=user/#autologin-user=/g' /etc/lightdm/lightdm.conf
+rm -rf /etc/lightdm/lightdm.conf.d
+mkdir /etc/lightdm/lightdm.conf.d
+touch /etc/lightdm/lightdm.conf.d/10-dxt2-autologin.conf
+echo "[SeatDefaults]" >> /etc/lightdm/lightdm.conf.d/10-dxt2-autologin.conf
+echo "autologin-user=$newuser" >> /etc/lightdm/lightdm.conf.d/10-dxt2-autologin.conf
+sleep 2
+echo ""
+
+clear
+echo "Installing LiveCD to disk"
+echo ""
+cp /usr/share/bootcd/bootcd2disk.conf.sda2 /usr/share/bootcd/bootcd2disk.conf
+mkfs.ext4 -F /dev/sda2
+bootcd2disk -s
+echo ""
+
+clear
+echo "Installing grub theme..."
+echo ""
+sleep 2
+bootcd2disk -onlymount
+mount --bind /dev /mnt/bootcd.disc/dev
+mount -t proc none /mnt/bootcd.disc/proc
+mount -t sysfs none /mnt/bootcd.disc/sys
+mount -t devpts none /mnt/bootcd.disc/dev/pts
+chroot /mnt/bootcd.disc update-grub
+echo ""
+clear
+read -p "Installation complete. Enter to shutdown " setupcomplete
+sync
+shutdown now
+exit

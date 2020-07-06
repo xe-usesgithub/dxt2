@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Installing Libreoffice suite"
+apt install --no-install-recommends libreoffice-writer libreoffice-calc libreoffice-impress -y
+echo ""

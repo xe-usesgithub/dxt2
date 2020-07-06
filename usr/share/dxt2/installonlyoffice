@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Installing Onlyoffice suite"
+wget https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb
+dpkg -i onlyoffice-desktopeditors_amd64.deb ; apt install -f -y
+rm /usr/share/applications/onlyoffice-desktopeditors.desktop
+echo ""
