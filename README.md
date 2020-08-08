@@ -19,20 +19,9 @@
 https://github.com/dessington/dxt2/releases
 
 <hr>
-
-<h4>Post-Installation</h4>
-<p>Once in your newly installed desktop open a root terminal (Ctrl-Alt-R) and run any of the following that apply<p>
-  <ul>
-    <li><code>addswap</code> Create & activate 2GB /swapfile</li>
-    <li><code>exportiso</code> Export a live & installable iso of your current installation</li>
-    <li><code>installtrim</code> Activate weekly TRIM cronjob & set scheduler to deadline (only for SSD)</li>
-    <li><code>update</code> Check for updates, remove unused packages, clean apt, upgrade</li>
-  </ul>
   
-  <hr>
-  
-  <h4>Credits</h4>
-  <ul>
+<h4>Credits</h4>
+<ul>
   <li><b>Distribution:</b> <a href="https://www.debian.org/">Debian Buster</a></li>
   <li><b>Desktop:</b> <a href="https://www.xfce.org/">XFCE4</a></li>
   <li><b>Panel:</b> <a href="https://gitlab.com/o9000/tint2">Tint2</a></li>
@@ -41,7 +30,7 @@ https://github.com/dessington/dxt2/releases
   <li><b>Icons:</b> <a href="https://github.com/vinceliuice/Tela-icon-theme">Tela</a></li>
   <li><b>WM:</b> Breeze Dark X</li>
   <li><b>Installation:</b> <a href="https://packages.debian.org/buster/bootcd">bootcd</a></li>
-<ul>
+ <ul>
   
 
 </div>
