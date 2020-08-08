@@ -10,9 +10,7 @@
   <li>Tweaked for a better desktop experience</li>
   <li>Blends with your desktop instead of trying to take it over</li>
   <li>Meant as a light base to build up from</li>
-  <li>Useful custom actions (Open Root Terminal, Edit as Root, Convert to JPG)</li>
-  <li>Backports enabled</li>
-  <li>Debian Buster</li>
+  <li>Flatpak enabled</li>
 </ul>
 
 <hr>
@@ -29,13 +27,6 @@ https://github.com/dessington/dxt2/releases
     <li><code>exportiso</code> Export a live & installable iso of your current installation</li>
     <li><code>installtrim</code> Activate weekly TRIM cronjob & set scheduler to deadline (only for SSD)</li>
     <li><code>update</code> Check for updates, remove unused packages, clean apt, upgrade</li>
-    <br/>
-    <li><code>installbrave</code> Install Brave browser</li>
-    <li><code>installchrome</code> Install Google Chrome</li>
-    <li><code>installsignal</code> Install Signal Messenger</li>
-    <li><code>installsublime</code> Install Sublime Text</li>
-    <li><code>installteamviewer</code> Install TeamViewer</li>    
-    <li><code>installvirtualbox</code> Install Virtualbox</li> 
   </ul>
   
   <hr>
