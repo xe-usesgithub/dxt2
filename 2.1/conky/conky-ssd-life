@@ -1,0 +1,3 @@
+#!/bin/bash
+ssd_life=`smartctl -a /dev/sda | head -73 | tail -1 | awk '{print $4 "/" $5}'`
+echo $ssd_life
