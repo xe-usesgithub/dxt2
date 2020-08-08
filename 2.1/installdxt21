@@ -1,0 +1,68 @@
+#!/bin/bash
+
+_user="$(id 1000 -u -n)"
+
+apt install -y alsa-utils aptitude bc btrfs-progs conky crda compton compton-conf curl dosfstools eject exfat-fuse exfat-utils f2fs-tools flatpak flatpak-xdg-utils git gnome-themes-standard gparted gsimplecal gtk2-engines-murrine gtk2-engines-pixbuf gvfs gvfs-backends libgl1-mesa-dri libgl1-mesa-glx libglu1-mesa libnotify-bin localepurge network-manager-gnome ntfs-3g p7zip-full policykit-1-gnome python-gtk2 slim software-properties-common tint2 thunar thunar-archive-plugin tumbler tumbler-plugins-extra unzip volumeicon-alsa wget wireless-regdb x11-xserver-utils xfce4-notifyd xfce4-session xfce4-settings xfce4-terminal xfdesktop4 xfonts-base xfwm4 xinit xserver-xorg xserver-xorg-core zip
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+rm /usr/share/applications/exo-mail-reader.desktop
+rm /usr/share/applications/exo-terminal-emulator.desktop
+rm /usr/share/applications/exo-web-browser.desktop
+rm /usr/share/applications/Thunar-bulk-rename.desktop
+rm /usr/share/applications/vim.desktop
+rm /usr/share/applications/tint2.desktop
+rm /usr/share/applications/Thunar.desktop
+rm /usr/share/applications/display-im6.q16.desktop
+rm /usr/share/applications/xfce4-session-logout.desktop
+rm /usr/share/applications/compton.desktop
+
+rm -r /usr/share/icons/Adwaita
+rm -r /usr/share/themes/Adwaita
+rm -r /usr/share/themes/Adwaita-dark
+rm -r /usr/share/themes/Bright
+rm -r /usr/share/themes/Daloa
+rm -r /usr/share/themes/Emacs
+rm -r /usr/share/themes/Kokodi
+rm -r /usr/share/themes/Moheli
+rm -r /usr/share/themes/Raleigh
+rm -r /usr/share/themes/Retro
+rm -r /usr/share/themes/Smoke
+rm -r /usr/share/themes/ZOMG-PONIES!
+
+wget --no-check-certificate https://dxt2.co.za/download/dxt21.7z
+7z e dxt21.7z
+7z x -aoa share.7z -o/usr/share
+7z x -aoa skel.7z -o/etc/skel
+7z x -aoa skel.7z -o/home/$_user
+7z x -aoa skel.7z -o/root
+mv slim.conf /etc
+
+chown $_user:$_user -R /home/$_user
+chown root:root -R /root
+chown root:root -R /etc/skel
+
+cat << EOF >> /etc/sysctl.conf
+kernel.exec-shield = 1
+vm.dirty_background_bytes = 16777216
+vm.dirty_background_ratio = 5
+vm.dirty_bytes = 50331648
+vm.dirty_ratio = 10
+vm.swappiness = 10
+vm.vfs_cache_pressure = 50
+EOF
+
+echo "%sudo    ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+chsh -s /bin/bash root
+chsh -s /bin/bash $_user
+
+find /usr/share/locale -mindepth 1 -maxdepth 1 ! -name 'en*' -exec rm -r {} \;
+rm -r /usr/share/doc/*
+rm -r /usr/share/help/*
+rm -r /usr/share/i18n/*
+rm -r /usr/share/man/*
+
+/usr/share/dxt2/dxt2grub
+/usr/share/dxt2/installtmp
+
+sync
