@@ -1,0 +1,3 @@
+#!/bin/bash
+
+apt install -y bc build-essential g++ gcc linbux-headers-amd64 make perl 
