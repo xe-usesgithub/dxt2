@@ -1,0 +1,25 @@
+style "xfdesktop-icon-view" {
+
+XfdesktopIconView::label-alpha = 0
+XfdesktopIconView::selected-label-alpha = 170
+
+base[NORMAL] = "#cccccc"
+base[SELECTED] = "#cccccc"
+base[ACTIVE] = "#cccccc"
+
+fg[NORMAL] = "#ffffff"
+fg[SELECTED] = "#000000"
+fg[ACTIVE] = "#000000"
+
+XfdesktopIconView::cell-spacing = 1
+XfdesktopIconView::cell-padding = 1
+XfdesktopIconView::cell-text-width-proportion = 1.6
+
+}
+widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
+
+gtk-theme-name="Aurora-Nuevo-Blue"
+gtk-icon-theme-name="Tela-black"
+gtk-font-name="Source Sans Pro 9"
+gtk-enable-tooltips=0
+
