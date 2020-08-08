@@ -29,7 +29,7 @@ https://github.com/dessington/dxt2/releases
   <li><b>Theme:</b> <a href="https://www.gnome-look.org/p/1283611/">Aurora Nuevo Blue</a></li>
   <li><b>Icons:</b> <a href="https://github.com/vinceliuice/Tela-icon-theme">Tela</a></li>
   <li><b>WM:</b> Breeze Dark X</li>
-  <li><b>Installation:</b> Debian preseeded iso</li>
+  <li><b>Installation:</b> Debian preseeded iso (if you have a working live-build script that works on Buster, let me know. Hint: you won't find one).</li>
  <ul>
   
 
