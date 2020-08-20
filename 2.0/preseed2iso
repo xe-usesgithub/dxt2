@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+############################################################
+# Name: preseed2iso
+# Desc: Add preseed file to Debian iso.
+# 
+# Requirements:
+#       - isolinux 
+#       - xorriso
+# 
+###########################################################
+
+# Download Debian iso and rename it to debian.iso
+
+# Create directory to hold extracted iso
+mkdir isofiles
+
+# Extract iso
+xorriso -osirrox on -indev debian.iso -extract / isofiles
+
+# Make initrd writeable
+chmod +w -R isofiles/install.amd/
+
+# Unzip initrd
+gunzip isofiles/install.amd/initrd.gz
+
+# Add the preseed to the initrd
+echo preseed.cfg | cpio -H newc -o -A -F isofiles/install.amd/initrd
+
+# Re-Zip initrd
+gzip isofiles/install.amd/initrd
+
+# Remove write abilities of initrd
+chmod -w -R isofiles/install.amd
+
+# Enter the isofiles directory
+cd isofiles || exit
+
+# Generate new md5sum.txt
+chmod 666 md5sum.txt
+find -follow -type f -exec md5sum {} \; > md5sum.txt
+chmod 444 md5sum.txt
+
+# Move back a directory
+cd .. || exit
+
+# Generate a new iso with the preseed file inside
+xorriso -as mkisofs \
+  -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin \
+  -c isolinux/boot.cat \
+  -b isolinux/isolinux.bin \
+  -no-emul-boot \
+  -boot-load-size 4 \
+  -boot-info-table \
+  -eltorito-alt-boot \
+  -e boot/grub/efi.img \
+  -no-emul-boot \
+  -isohybrid-gpt-basdat \
+  -o dxt2.0.iso isofiles/
