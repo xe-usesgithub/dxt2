@@ -1,5 +1,0 @@
-#!/bin/bash
-systemctl enable fstrim.timer
-echo "block/sda/queue/scheduler = deadline" >> /etc/sysfs.conf
-echo "Reboot required"
-echo ""

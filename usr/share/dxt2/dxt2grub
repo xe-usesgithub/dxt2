@@ -1,7 +1,0 @@
-#!/bin/bash
-cd /usr/share/dxt2
-mkdir /boot/grub/themes
-cp -r grub/dxt2 /boot/grub/themes
-echo "GRUB_THEME=/boot/grub/themes/dxt2/theme.txt" >> /etc/default/grub
-update-grub
-echo ""
