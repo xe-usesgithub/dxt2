@@ -1,8 +1,0 @@
-touch /etc/systemd/system/slim.service
-
-cat << EOF > /etc/systemd/system/slim.service
-[Service]
-ExecStart=/usr/bin/slim -nodaemon
-ExecStop=/usr/bin/killall /usr/bin/slim
-KillMode=none
-EOF

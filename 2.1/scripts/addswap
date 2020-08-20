@@ -1,7 +1,0 @@
-#!/bin/bash
-sudo dd if=/dev/zero of=/swap count=2048 bs=1MiB
-chmod 600 /swap
-mkswap /swap
-swapon /swap
-echo "/swap none swap sw 0 0" | tee -a /etc/fstab
-echo ""

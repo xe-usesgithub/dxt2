@@ -2,7 +2,7 @@
 
 _user="$(id 1000 -u -n)"
 
-apt install -y alsa-utils aptitude bc btrfs-progs conky crda compton compton-conf curl dosfstools eject exfat-fuse exfat-utils f2fs-tools flatpak flatpak-xdg-utils git gnome-themes-standard gparted gsimplecal gtk2-engines-murrine gtk2-engines-pixbuf gvfs gvfs-backends libgl1-mesa-dri libgl1-mesa-glx libglu1-mesa libnotify-bin localepurge network-manager-gnome ntfs-3g p7zip-full policykit-1-gnome python-gtk2 slim software-properties-common tint2 thunar thunar-archive-plugin tumbler tumbler-plugins-extra unzip volumeicon-alsa wget wireless-regdb x11-xserver-utils xfce4-notifyd xfce4-session xfce4-settings xfce4-terminal xfdesktop4 xfonts-base xfwm4 xinit xserver-xorg xserver-xorg-core zip
+apt install -y alsa-utils aptitude bc breeze-cursor-theme btrfs-progs conky crda compton compton-conf curl dosfstools eject exfat-fuse exfat-utils f2fs-tools flatpak flatpak-xdg-utils git gnome-themes-standard gparted gsimplecal gtk2-engines-murrine gtk2-engines-pixbuf gvfs gvfs-backends libgl1-mesa-dri libgl1-mesa-glx libglu1-mesa libnotify-bin localepurge network-manager-gnome ntfs-3g p7zip-full policykit-1-gnome python-gtk2 slim software-properties-common tint2 thunar thunar-archive-plugin tumbler tumbler-plugins-extra unzip volumeicon-alsa wget wireless-regdb x11-xserver-utils xfce4-notifyd xfce4-session xfce4-settings xfce4-terminal xfdesktop4 xfonts-base xfwm4 xinit xserver-xorg xserver-xorg-core zip
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
@@ -36,7 +36,12 @@ wget --no-check-certificate https://dxt2.co.za/download/dxt21.7z
 7z x -aoa skel.7z -o/etc/skel
 7z x -aoa skel.7z -o/home/$_user
 7z x -aoa skel.7z -o/root
+
+chown root:root slim.conf
 mv slim.conf /etc
+
+rm *.7z
+rm ./installdxt21
 
 chown $_user:$_user -R /home/$_user
 chown root:root -R /root
@@ -44,12 +49,21 @@ chown root:root -R /etc/skel
 
 cat << EOF >> /etc/sysctl.conf
 kernel.exec-shield = 1
+kernel.randomize_va_space = 1
 vm.dirty_background_bytes = 16777216
 vm.dirty_background_ratio = 5
-vm.dirty_bytes = 50331648
-vm.dirty_ratio = 10
+vm.dirty_bytes = 32768000
+vm.dirty_ratio = 50
 vm.swappiness = 10
 vm.vfs_cache_pressure = 50
+EOF
+
+touch /etc/systemd/system/slim.service
+cat << EOF > /etc/systemd/system/slim.service
+[Service]
+ExecStart=/usr/bin/slim -nodaemon
+ExecStop=/usr/bin/killall /usr/bin/slim
+KillMode=none
 EOF
 
 echo "%sudo    ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
@@ -62,7 +76,10 @@ rm -r /usr/share/help/*
 rm -r /usr/share/i18n/*
 rm -r /usr/share/man/*
 
+#/usr/share/dxt2/addswap
 /usr/share/dxt2/dxt2grub
 /usr/share/dxt2/installtmp
+
+amixer sset 'Master' 100%
 
 sync
